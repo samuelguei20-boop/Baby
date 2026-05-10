@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Baby Cash Coin</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- BULLES -->
+
+<div class="bg-animation">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<!-- APP -->
+
+<div class="app">
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="left-header">
+
+<p class="hello">
+Bonjour 👋
+</p>
+
+<div class="badge-row">
+
+<div class="bronze-badge">
+🥉 Bronze
+</div>
+
+<div class="level-box">
+
+<div class="level-top">
+
+<span class="level-text">
+Niveau 1
+</span>
+
+<span class="percent">
+1%
+</span>
+
+</div>
+
+<div class="xp-bar">
+
+<div class="xp-fill"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right-header">
+
+<button class="notif-btn">
+
+<i class="fa-regular fa-bell"></i>
+
+</button>
+
+<button id="themeBtn" class="theme-btn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="bcc-logo">
+
+<div class="bcc-inner">
+BCC
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- SOLDE -->
+
+<section class="balance-card">
+
+<div class="bridge-design">
+
+<div class="bridge bridge-left"></div>
+
+<div class="bridge bridge-right"></div>
+
+<div class="bridge-line"></div>
+
+<div class="graph-line"></div>
+
+</div>
+
+<p class="balance-label">
+Solde principal
+</p>
+
+<div class="balance-row">
+
+<h1 class="balance-value">
+0
+</h1>
+
+<span class="bcc-text">
+BCC
+</span>
+
+</div>
+
+<p class="small-bcc">
+Solde BCC
+</p>
+
+<div class="cfa-box">
+
+<p class="cfa-label">
+Estimation en CFA
+</p>
+
+<div class="cfa-row">
+
+<h2 class="cfa-value">
+≈ 0 CFA
+</h2>
+
+<div class="arrow-up">
+↗
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACTIONS -->
+
+<section class="actions">
+
+<button class="action-btn popup-btn">
+
+<div class="action-icon">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</div>
+
+<span>Envoyer</span>
+
+</button>
+
+<button class="action-btn popup-btn">
+
+<div class="action-icon">
+
+<i class="fa-solid fa-download"></i>
+
+</div>
+
+<span>Recevoir</span>
+
+</button>
+
+<button class="action-btn popup-btn">
+
+<div class="action-icon">
+
+<i class="fa-solid fa-expand"></i>
+
+</div>
+
+<span>Scanner</span>
+
+</button>
+
+<button class="action-btn popup-btn">
+
+<div class="action-icon">
+
+<i class="fa-solid fa-rotate"></i>
+
+</div>
+
+<span>Convertir</span>
+
+</button>
+
+</section>
+
+<!-- RECOMPENSE + COFFRES -->
+
+<section class="reward-section">
+
+<!-- ROUE -->
+
+<div class="wheel-card">
+
+<div class="card-title">
+
+🎁 Récompense BCC
+
+</div>
+
+<div class="wheel-wrapper">
+
+<div class="pointer"></div>
+
+<div class="wheel" id="wheel">
+
+<div class="wheel-center">
+BCC
+</div>
+
+</div>
+
+</div>
+
+<button id="spinBtn" class="spin-btn">
+
+TOURNER
+
+</button>
+
+</div>
+
+<!-- COFFRES -->
+
+<div class="chest-card">
+
+<div class="card-title">
+
+🎁 Coffret-Cadeau
+
+</div>
+
+<div class="chest-grid">
+
+<div class="chest bronze popup-btn">
+
+<h3>Bronze</h3>
+
+<p>0 - 10 BCC</p>
+
+</div>
+
+<div class="chest silver popup-btn">
+
+<h3>Silver</h3>
+
+<p>5 - 30 BCC</p>
+
+</div>
+
+<div class="chest gold popup-btn">
+
+<h3>Gold</h3>
+
+<p>20 - 80 BCC</p>
+
+</div>
+
+<div class="chest blue popup-btn">
+
+<h3>Platine</h3>
+
+<p>50 - 150 BCC</p>
+
+</div>
+
+<div class="chest purple popup-btn">
+
+<h3>Diamant</h3>
+
+<p>100 - 300 BCC</p>
+
+</div>
+
+<div class="chest mystery popup-btn">
+
+<h3>Mystère</h3>
+
+<p>?? - ???</p>
+
+</div>
+
+</div>
+
+<div class="chest-info">
+
+⭐ Plus tu tournes,
+plus les coffres gagnent en valeur !
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="bottom-nav">
+
+<button class="nav-btn active">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Accueil</span>
+
+</button>
+
+<button class="nav-btn">
+
+<i class="fa-solid fa-gift"></i>
+
+<span>Récompense BCC</span>
+
+</button>
+
+<button class="center-btn">
+
+<div class="center-text">
+
+❝
+
+<div class="ticker-mini">
+
+Bienvenue sur Baby Cash Coin
+
+</div>
+
+•••
+
+</div>
+
+</button>
+
+<button class="nav-btn">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span>Marché BCC</span>
+
+</button>
+
+<button class="nav-btn">
+
+<i class="fa-regular fa-user"></i>
+
+<span>Profil</span>
+
+</button>
+
+</nav>
+
+<!-- POPUP -->
+
+<div id="popup" class="popup">
+
+Service disponible bientôt
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
